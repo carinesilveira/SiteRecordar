@@ -42,10 +42,9 @@ function Tempo(){
     s[5] = 'Sexta'
     s[6] = 'Sábado'
 
-    // document.getElementById('hora').innerText=(s[semana]+", "+ dia + " de " + m[mes] + " de " + ano + ". Agora são: " + hora + ":" + minuto + ":" + segundos);
+    //  document.getElementById('hora').innerText=(s[semana]+", "+ dia + " de " + m[mes] + " de " + ano + ". Agora são: " + hora + ":" + minuto + ":" + segundos);
 
-    document.getElementById("hora").innerText=(s[semana]` ${dia} de ${m[mes]} de ${ano}. Agora são: ${hora}:${minuto}:${segundos}`)
-
+    document.getElementById('hora').innerText= (`${s[semana]}, ${dia} de ${m[mes]} de ${ano}. Agora são: ${hora}:${minuto}:${segundos}`);
 
     //Atualizar o tempo todo
     setTimeout('Tempo', '1000')
@@ -88,5 +87,5 @@ function FraseDia(){
     data = new Date()
     dia = data.getDate()
 
-    document.getElementById("msg").innerText = msg[dia]
+    document.getElementById('msg').innerText = msg[dia]
 }
